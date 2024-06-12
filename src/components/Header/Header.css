@@ -1,0 +1,57 @@
+header { 
+    background-image: url(bg-intro-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 38vw -44vh;
+
+    display: flex;
+    align-items: flex-start;
+}
+
+header > section > div > h1 { 
+    color: var(--primary-dark-blue);
+}
+
+header > section > div > button { 
+    background: linear-gradient(to right, var(--primary-lime-green), var(--primary-lime-green) 20%, var(--primary-bright-cyan) 85%, var(--primary-bright-cyan));
+}
+
+header > section > div > button:hover { 
+    box-shadow: inset 100px 100px rgb(255, 255, 255, .3);
+}
+
+header > section ~ div { 
+    background-image: url(image-mockups.png);
+    background-position: 100px -7rem;
+    background-repeat: no-repeat;
+    height: 940px;
+    width: 767px;
+    
+}
+
+header > section > div { 
+    text-align: left;
+    width: 37vw;
+}
+
+
+@media screen and (max-width: 980px) {
+    header { 
+        flex-direction: column-reverse;
+        background-image: url(bg-intro-mobile.svg);
+        background-position: 0px 0px;
+        background-size: contain;
+        align-items: center;
+    }
+
+    header > section ~ div { 
+        background-size: contain;
+        background-position: center 24px;
+        width: 100vw;
+        height: calc(100vw * 1,224250325945241);
+    }
+
+    header > section > div { 
+        text-align: center;
+        width: 90%;
+    }
+}

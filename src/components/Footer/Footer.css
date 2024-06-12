@@ -1,0 +1,71 @@
+footer { 
+    background-color: var(--primary-dark-blue);
+}
+
+footer > div > button { 
+    background: linear-gradient(to right, var(--primary-lime-green), var(--primary-lime-green) 20%, var(--primary-bright-cyan) 85%, var(--primary-bright-cyan));
+}
+
+footer > div > button:hover { 
+    box-shadow: inset 100px 100px rgb(255, 255, 255, .3);
+}
+
+footer ul li:hover { 
+    color: var(--primary-lime-green);
+    cursor: pointer;
+}
+
+footer div > svg:hover > path { 
+    fill: var(--primary-lime-green);
+    /* color: var(--primary-lime-green); */
+}
+
+footer > div:nth-child(1) { 
+    gap: 8rem;
+}
+
+footer > div:has(button ~ p) { 
+    position: absolute;
+    right: 6rem/* 96px */;
+    top: 0.5rem; /* 8px */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+}
+
+footer ul { 
+    padding-top: 2rem; /* 32px */
+    padding-bottom: 2rem; /* 32px */
+}
+
+
+@media screen and (max-width: 985px) { 
+    footer { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer > div:nth-child(1) { 
+        padding: 22px 0px;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    footer > div:has(button ~ p) { 
+        position: static;
+        align-items: center;
+        gap: 26px;
+    }
+
+    footer ul { 
+        width: 100%;
+        padding: 0;
+    }
+
+    footer ul li { 
+        text-align: center;
+    }
+}

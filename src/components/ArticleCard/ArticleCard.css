@@ -1,0 +1,7 @@
+section > div > span ~ h1 { 
+    color: var(--primary-dark-blue);
+}
+
+section > div > span ~ h1:hover {
+    color: var(--primary-lime-green);
+}

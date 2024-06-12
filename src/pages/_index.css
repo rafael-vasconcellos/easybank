@@ -1,0 +1,24 @@
+main > div > h1 { 
+    color: var(--primary-dark-blue);
+}
+
+.w-screen:has(.merchant-cards) { 
+    background-color: var(--neutral-light-grayish-blue);
+    /* background-color: black; */
+}
+
+@media screen and (max-width: 618px) {
+    .w-screen:has(.merchant-cards) { 
+        text-align: center;
+    }
+
+    .merchant-cards > .w-72 > div:has(img) { 
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 934px) {
+    .merchant-cards { 
+        justify-content: center;
+    }
+}

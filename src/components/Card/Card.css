@@ -1,0 +1,4 @@
+div > img ~ h1 { 
+    color: var(--primary-dark-blue);
+}
+

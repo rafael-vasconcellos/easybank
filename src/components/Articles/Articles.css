@@ -1,0 +1,15 @@
+h1.py-4.text-3xl { 
+    color: var(--primary-dark-blue);
+}
+
+@media screen and (max-width: 1015px) {
+    section > h1 ~ .flex-wrap { 
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 618px) {
+    section > h1.text-3xl.py-4 { 
+        text-align: center;
+    }
+}
