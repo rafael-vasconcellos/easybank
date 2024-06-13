@@ -52,6 +52,26 @@ the purpose behind the stack choice was to learn how to build static files with 
 + endpoints & middleware
 + localization
 
+#### Anatomy of the build
+
+static components -> embedded CSS  
+astro bundler -> embedded JS  
+**_astro/web.CKEhz0Ta.js:** UI Framework (solid)  
+**_astro/client.DKvI4T_I:** "renderer"
+
+#### Base URL
+
+the configuration of the base url for static files
+
+```javascript
+// https://astro.build/config
+export default defineConfig({
+  // Enable Solid to support Solid JSX components.
+  integrations: [solid(), tailwind()],
+  base: 'easybank/', // base url for static files, configured for github pages
+});
+```
+
 ## How to build
 
 ```bash
