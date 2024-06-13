@@ -6,7 +6,7 @@ export default function Header() {
     return ( 
         <header class="min-h-[100vh] h-fit w-screen relative">
             <section class="h-full ml-[7vw] py-28">
-                <div class='flex flex-col items-center gap-10'>
+                <div class='flex flex-col gap-10'>
                     <h1 class='text-6xl'>Next generation digital banking</h1>
                     <h2>
                         Take your financial life online. Your Easybank account will be a one-stop-shop 
