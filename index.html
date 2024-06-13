@@ -247,13 +247,25 @@
     </style>
     <script>
       (() => {
-        var e = async (t) => {
-          await (
-            await t()
-          )();
+        var l = (s, i, o) => {
+          let r = async () => {
+              await (
+                await s()
+              )();
+            },
+            t = typeof i.value == "object" ? i.value : void 0,
+            c = { rootMargin: t == null ? void 0 : t.rootMargin },
+            n = new IntersectionObserver((e) => {
+              for (let a of e)
+                if (a.isIntersecting) {
+                  n.disconnect(), r();
+                  break;
+                }
+            }, c);
+          for (let e of o.children) n.observe(e);
         };
-        (self.Astro || (self.Astro = {})).load = e;
-        window.dispatchEvent(new Event("astro:load"));
+        (self.Astro || (self.Astro = {})).visible = l;
+        window.dispatchEvent(new Event("astro:visible"));
       })();
       (() => {
         var A = Object.defineProperty;
@@ -465,7 +477,7 @@
       renderer-url="/easybank/_astro/client.DKvI4T_I.js"
       props="{}"
       ssr=""
-      client="load"
+      client="visible"
       opts='{"name":"Navbar","value":true}'
       await-children=""
       ><nav
