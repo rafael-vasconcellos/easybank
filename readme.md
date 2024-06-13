@@ -10,6 +10,7 @@ This is a solution to the [Easybank landing page challenge on Frontend Mentor](h
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
+- [How to build](#how-to-build)
 - [Author](#author)
 - [Recommended hosts](#recommended-hosts)
 
@@ -50,6 +51,21 @@ the purpose behind the stack choice was to learn how to build static files with 
 + suport for view transitions
 + endpoints & middleware
 + localization
+
+## How to build
+
+```bash
+# install the dependencies
+$ npm install
+
+# build
+$ npm run build
+
+# preview
+$ npm run preview
+```
+
+the files will be built into the *dist* folder
 
 ## Author
 
