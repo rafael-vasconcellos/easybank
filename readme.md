@@ -52,10 +52,10 @@ the purpose behind the stack choice was to learn how to build static files with 
 + endpoints & middleware
 + localization
 
-#### Anatomy of the build
+#### Anatomy of the build (from what I got)
 
 static components -> embedded CSS  
-astro bundler -> embedded JS  
+astro bundle -> embedded JS  
 **_astro/web.CKEhz0Ta.js:** UI Framework (solid)  
 **_astro/client.DKvI4T_I:** "renderer"
 
