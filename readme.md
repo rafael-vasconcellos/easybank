@@ -97,6 +97,6 @@ the files will be built into the *dist* folder
 - [GitHub Pages](https://pages.github.com/)
 - [Vercel](https://vercel.com/)
 - [Netlify](https://www.netlify.com/)
-
+- [Cloudflare](https://www.cloudflare.com/)
 
 
