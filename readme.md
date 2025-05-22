@@ -95,8 +95,9 @@ the files will be built into the *dist* folder
 ## Recommended hosts
 
 - [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
 - [Netlify](https://www.netlify.com/)
 - [Cloudflare](https://www.cloudflare.com/)
+- [Glitch](https://www.glitch.com/)
+- [Vercel](https://vercel.com/)
 
 
